@@ -41,10 +41,3 @@ O:8:"Example2":1:{s:14:"Example2hook";s:17:"system('whoami');";}
 ```
 #####
 
-## Find and delete files (in case of a space in path we should use)
-```sh
-#!/bin/sh
-
-find . -name ".DS_Store*" -exec rm {} + 2>/dev/null 
-
-```
