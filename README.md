@@ -14,6 +14,8 @@ console.log("Serialized: \n" + serialize.serialize(y));
 Run:
 ```sh
 node serialize.js
+
+# You should add IIFE brackets "()" at the end of output. 
 ```
 
 Payload:
